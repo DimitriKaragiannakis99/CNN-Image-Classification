@@ -35,7 +35,7 @@ if __name__ == '__main__':
   # Model Setup
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   # Adjusting for the deprecation warning
-  model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
+  model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT) # uses pretrained weights
 
   # Modifying the final layer to match the number of classes
   num_classes = len(dataset.classes)  # Number of classes in the dataset --> 3 classes
