@@ -11,7 +11,13 @@ from torchvision.datasets import ImageFolder
 from sklearn.manifold import TSNE
 from tqdm import tqdm  # For loading bar
 
+from time import time 
+
 if __name__ == '__main__':
+  
+  # Adding logs of time
+  program_start_time = time()
+  
   # Data Transformation - using ResNet and ImageNet Standards
   transform = transforms.Compose([
       transforms.Resize((224, 224)),  # ResNet requires 224x224 input
@@ -29,15 +35,21 @@ if __name__ == '__main__':
   train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
   # Creating data loaders
+  loader_start_time = time()
   train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=4)
   test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4)
-
+  print(f'Elapsed time for loading data and getting DataLoaders: {(time() - loader_start_time):.2f} seconds')
+  
   # Model Setup
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  
+  init_model_start_time = time()
   # Adjusting for the deprecation warning
-  model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT) # uses pretrained weights
+  # model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT) # uses pretrained weights
   # model = models.resnet50(pretrained=False) # does not use pretrained weights
-
+  model = models.resnet50(weights=None) # This is better practice then pretrained=False
+  print(f'Elapsed time for init of the model: {(time() - init_model_start_time):.2f} seconds')
+  
   # Modifying the final layer to match the number of classes
   num_classes = len(dataset.classes)  # Number of classes in the dataset --> 3 classes
   model.fc = nn.Linear(model.fc.in_features, num_classes)
@@ -57,7 +69,10 @@ if __name__ == '__main__':
   # Training 
   train_acc, test_acc, train_loss, test_loss = [], [], [], []
 
+  training_start_time = time()
+  
   for epoch in range(num_epochs):
+    epoch_start_time = time()
     # Training phase
     model.train()
     running_loss, running_corrects = 0.0, 0
@@ -106,7 +121,10 @@ if __name__ == '__main__':
     print(f"Epoch {epoch+1}/{num_epochs}, "
           f"Train Loss: {train_loss[-1]:.4f}, Train Acc: {train_acc[-1]:.4f}, "
           f"Test Loss: {test_loss[-1]:.4f}, Test Acc: {test_acc[-1]:.4f}")
+    print(f'Elapsed time for epoch {epoch+1}: {(time() - epoch_start_time):.2f} seconds')
 
+  print(f'Elapsed time for training model {(time() - training_start_time):.2f} seconds')
+  
   # Feature Extraction for t-SNE
   features, labels_list = [], []
   model.eval()
@@ -136,11 +154,13 @@ if __name__ == '__main__':
   plt.ylabel("t-SNE Dimension 2")
   plt.show()
   
-  # Create the directory if it doesn't exist
-  os.makedirs('task_1', exist_ok=True)
+  # # Create the directory if it doesn't exist
+  # os.makedirs('task_1', exist_ok=True)
 
-  # Save the model
-  model_save_path = 'task_1/resnet50_colorectal.pth'
-  torch.save(model.state_dict(), model_save_path)
+  # # Save the model
+  # model_save_path = 'task_1/resnet50_colorectal.pth'
+  # torch.save(model.state_dict(), model_save_path)
 
-  print(f"Model saved to {model_save_path}")
+  # print(f"Model saved to {model_save_path}")
+
+  print(f'Elapsed time for program {(time() - program_start_time):.2f}')
