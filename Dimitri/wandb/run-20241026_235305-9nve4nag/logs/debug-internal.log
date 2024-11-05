@@ -1,0 +1,53 @@
+{"time":"2024-10-26T23:53:05.6050909-04:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-10-26T23:53:05.6050909-04:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\dkara\\OneDrive\\Desktop\\432-Project\\wandb\\run-20241026_235305-9nve4nag\\logs\\debug-core.log"}
+{"time":"2024-10-26T23:53:05.8528525-04:00","level":"INFO","msg":"created new stream","id":"9nve4nag"}
+{"time":"2024-10-26T23:53:05.8528525-04:00","level":"INFO","msg":"stream: started","id":"9nve4nag"}
+{"time":"2024-10-26T23:53:05.8528525-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"9nve4nag"}}
+{"time":"2024-10-26T23:53:05.8528525-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"9nve4nag"}}
+{"time":"2024-10-26T23:53:05.853373-04:00","level":"INFO","msg":"sender: started","stream_id":"9nve4nag"}
+{"time":"2024-10-26T23:53:06.0360636-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-26T23:53:06.206366-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:54:20.7893012-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:54:20.8043981-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:54:23.3507324-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:54:23.3559292-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:54:38.3440093-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:54:38.3533595-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:54:47.2805831-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:54:47.2859486-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:54:52.2694541-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:54:52.2793142-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:55:01.8108914-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:55:01.8134337-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:55:08.1426024-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:55:08.1442178-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:55:26.915492-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:55:26.9295302-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:55:28.6164562-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:55:28.6216999-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:55:52.956473-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:55:53.3618352-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-26T23:55:59.8146273-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-26T23:59:17.6694097-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-27T11:01:15.0425339-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-27T11:01:15.0570449-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-27T11:01:17.2171778-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-27T11:01:17.2237167-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-27T11:01:19.6634476-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-27T11:01:19.6733546-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-27T11:01:32.8215781-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-27T11:01:33.2278218-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-10-27T11:01:40.0971477-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-10-27T13:01:01.8549456-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-27T13:01:10.1513726-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/dkaragiannakis99-concordia-university/432-Task-01/9nve4nag/file_stream"}
+{"time":"2024-10-27T14:07:49.567685-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-27T14:14:06.8853012-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/dkaragiannakis99-concordia-university/432-Task-01/9nve4nag/file_stream"}
+{"time":"2024-10-27T16:47:51.0505166-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-27T16:47:51.0510561-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-27T16:47:52.0554652-04:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8857734}],"total_operations":1}}
+{"time":"2024-10-27T16:47:52.1062042-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-27T16:47:53.2511764-04:00","level":"INFO","msg":"stream: closing","id":"9nve4nag"}
+{"time":"2024-10-27T16:47:53.2511764-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"9nve4nag"}}
+{"time":"2024-10-27T16:47:53.2511764-04:00","level":"INFO","msg":"sender: closed","stream_id":"9nve4nag"}
+{"time":"2024-10-27T16:47:53.2511764-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"9nve4nag"}}
+{"time":"2024-10-27T16:47:53.2511764-04:00","level":"INFO","msg":"stream: closed","id":"9nve4nag"}
