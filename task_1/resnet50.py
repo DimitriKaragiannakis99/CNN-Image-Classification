@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import models, transforms
 from torchvision.datasets import ImageFolder
 from sklearn.manifold import TSNE
-from tqdm import tqdm  # For loading bar
+from tqdm import tqdm  
 
 from time import time 
 
