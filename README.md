@@ -48,6 +48,7 @@ Once downloaded, organize the datasets into the following directory structure:
    - **Data/Colorectal Cancer**
    - **Data/Prostate Cancer**
    - **Data/Animal Faces**
+   - **Data/Sample Test Dataset (Prostate Cancer)/Prostate Cancer**
 
 ## Instructions
 
@@ -55,7 +56,7 @@ Once downloaded, organize the datasets into the following directory structure:
 To train and validate your CNN model on the **Colorectal Cancer Dataset**, follow these steps:
 
 1. Open the `task_1.ipynb` notebook in Jupyter Notebook or JupyterLab.
-2. Ensure the **Colorectal Cancer Dataset** is placed in the correct directory: `Data/Colorectal Cancer/`.
+2. Ensure the **Colorectal Cancer Dataset** (the sample DataSet with just 100 samples) is placed in the correct directory: `Data/Sample Test Dataset (Prostate Cancer)/Prostate Cancer/`.
 3. Execute all the cells in the notebook to:
    - Preprocess the data.
    - Train the CNN model.
